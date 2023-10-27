@@ -1400,7 +1400,7 @@ margin-right: 0;
 .chat__52833 form, .chat__52833 form {
 	border-top: none!important;
   box-shadow: none!important;
-	margin: 0 10px 0 0!important;
+	margin: 0 10px 0 10px !important;
   display: flex!important;
   padding: 0!important;
   flex-direction: column-reverse!important;
