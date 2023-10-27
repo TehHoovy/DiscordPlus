@@ -1406,9 +1406,9 @@ margin-right: 0;
   flex-direction: column-reverse!important;
 }
 #app-mount .channelTextArea__2e60f, #app-mount .channelTextArea__2e60f {
-	background-color: transparent!important;
+	
 	margin-top: var(--dplus-spacing-ui)!important;
-	margin: 0;
+
 }
 .wrapper_fbbb73 {
 	height: 12px;
