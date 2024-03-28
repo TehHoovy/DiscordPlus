@@ -829,6 +829,23 @@ padding: var(--dplus-spacing-ui);
 		overflow: hidden;
 	}
 	
+			/*-- 10.2 Home Icon --*/
+#app-mount .scroller__3d071 {padding-top: var(--dplus-spacing-ui);}
+.tutorialContainer__890ea .childWrapper__01b9c svg {display: none !important;}
+.wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c,
+.wrapper_d281dd:hover .childWrapper__01b9c, .childWrapper__01b9c {
+	background-color: transparent;
+}
+.theme-dark .tutorialContainer__890ea .childWrapper__01b9c,
+.theme-light .theme-dark .tutorialContainer__890ea .childWrapper__01b9c,
+.theme-light .tutorialContainer__890ea .childWrapper__01b9c {
+	background-image: var(--dplus-icon-home-dark);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.theme-light .tutorialContainer__890ea .childWrapper__01b9c {background-image: var(--dplus-icon-home-light);}
+
 	
 /* Switches, Checkboxes, Buttons */
 button, [type="button"] {
