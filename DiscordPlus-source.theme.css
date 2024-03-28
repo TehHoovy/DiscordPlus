@@ -579,135 +579,257 @@ padding: var(--dplus-spacing-ui);
 	border-bottom: 0;
 }
 
-      /*--- 8 Popouts ---*/
-        
-    /*-- 8.1 General Popout --*/
-.layer-2aCOJ3 > div > div:not(.tooltipPointer-3L49xb) {
-	background-color: var(--dplus-bgc-popout);
-	border-radius: var(--dplus-radius-ui);
-}
-
-.popouts-2bnG9Z {
-    z-index: 1000 !important;
-}
-	/* Tooltips */
-.tooltip-14MtrL {
-	backdrop-filter: var(--blurcalc-popout);
-}
-.tooltipContent-Nejnvh {
-	padding: var(--dplus-spacing-ui);
-	background-color: transparent !important;
-}
-    /*-- 8.2 Pins Popout --*/
-.messagesPopoutWrap_b3b384 {
-    width: calc(440px + var(--dplus-icon-avatar-chat) + var(--dplus-spacing-ui));
-}
-.header_f5cc88 { padding: var(--dplus-spacing-ui); }
-.messagesPopoutWrap_b3b384 {
-    background-color: transparent !important;
-    border: none !important;
-    max-height: 560px !important;
-    backdrop-filter: var(--blurcalc-popout);
-}
-.messageGroupWrapper_f8c6e9 {
-    border-radius: var(--dplus-radius-ui);
-    min-height: 70px;
-    background: transparent;
-}
-.messageGroupWrapper_f8c6e9 .cozy_f5c119.wrapper__09ecc {
-    padding-top: var(--dplus-spacing-ui);
-    padding-bottom: var(--dplus-spacing-ui);
-}
-  
-.messagesPopout__22763 .messageGroupWrapper_f8c6e9 .wrapper__09ecc {
-    background-color: var(--dplus-bgc-ui-card) !important;
-}
-.messagesPopout__22763 .messageGroupWrapper_f8c6e9:hover .wrapper__09ecc {
-    background-color: var(--dplus-bgc-ui-card-hover) !important;
-}
-.messagesPopoutWrap_b3b384 .messagesPopout__22763 .wrapper__09ecc {
-    transition: background-color var(--dplus-anim-short);
-}
-#app-mount .message__04d9f {
-	background-color: var(--dplus-bgc-chatmsg);
-	border-radius: var(--dplus-radius-ui);
-	border: 1px solid var(--dplus-accent-ui);
-	box-shadow: none;
-	padding: 0;
-	min-height: 70px;
-}
-  
-    /*-- 8.3 Context Menu Popout --*/
-.scroller-1bVxF5, .submenuPaddingContainer-_k62dJ {
-	padding: 0;
-}
-.scroller-1bVxF5::-webkit-scrollbar, .submenuPaddingContainer-_k62dJ::-webkit-scrollbar {
-	width: 0 !important;
-}
-.submenuPaddingContainer-_k62dJ {margin-right: -4px;margin-left: -4px;} /* fixes the submenu being four pixels off */
-
-.labelContainer-2vJzYL {
-	padding: calc(var(--dplus-spacing-ui) / 1.25) var(--dplus-spacing-ui);
-}
-
-.item-1OdjEX:not([aria-haspopup="true"]):not(#account-avatar),
-.item-1OdjEX[aria-haspopup="true"],
-.wrapper__2e846,
-.separator-1So4YB { backdrop-filter: var(--blurcalc-popout) }
-/* the context menu backdrop blur has to be applied separately for elements
-that have popups, or else the menu breaks when you hover over them */
-
-.wrapper__2e846 { padding: 0; }
-.customItem-2CxBSo .button_afdfd9 { padding: calc(var(--dplus-spacing-ui) / 2); }
-.separator-1So4YB { margin: 0; }
-
-.item-1OdjEX,
-.button_afdfd9 {
-	border-radius: var(--dplus-radius-ui);
-}
-.item-1OdjEX {
-	margin: 0;
-	transition: background-color var(--dplus-anim-button);
-}
-
-.button_afdfd9:not(.lookBlank__7ca0a), /* non-special buttons */
-.colorDefault-CDqZdO:not(.labelContainer-2vJzYL) /* regular buttons, except context menu */ {
-	background-color: var(--dplus-bgc-button)!important;
-	transition: var(--dplus-anim-button);
-}
-
-[id^="status-picker-"] /* status picker (who would've guessed?) */ {
-	background-color: transparent !important;
-}
-
-.button_afdfd9:not(.lookBlank__7ca0a):hover, /* buttons hovered over */
-.button_afdfd9.focused__47631, /* focused but not hovered over */
-.colorDefault-CDqZdO:not(.labelContainer-2vJzYL).focused-3qFvc8, /* regular buttons, focused */
-.colorDefault-CDqZdO:hover:not(.labelContainer-2vJzYL):not(.hideInteraction-2jPGL_) /* regular buttons but only if clickable */ {
-	background-color: var(--dplus-bgc-button-hover)!important;
-	transition: var(--dplus-anim-button);
-}
-.item-1OdjEX.colorDanger-3n-KnP:hover {background-color: #f04747;}
-    /*-- 8.4 Inbox --*/
-.container__20de0 {background-color: transparent!important;}
-    /*-- 8.5 AutoComplete --*/
-.autocomplete_df266d {
-	background-color: var(--dplus-bgc-popout) !important;
-	border-radius: var(--dplus-radius-ui);
-}
-#app-mount .selected-3H3-RC {background-color: var(--dplus-accent-ui);}
-    /*-- 8.6 Stickers/Emoji/Gif Tab --*/
-.result-3OpoO7, .wrapper__7a35f {
-    background-color: transparent !important;
-    border-radius: var(--dplus-radius-ui);
-}
-#app-mount .focused-q9B2e4:after, .theme-dark .result-3OpoO7:hover:after {
-    box-shadow: inset 0 0 0 2px var(--dplus-accent-ui), inset 0 0 0 3px #2f3136;
-}
-.scroller_e89578::-webkit-scrollbar {
-  width: calc(var(--dplus-scrollbar-width) / 2) !important;
-}
-
+		/*--- 8 Popouts ---*/
+		
+	/*-- 8.1 General Popout --*/
+	.layer-2aCOJ3 > div > div:not(.tooltipPointer-3L49xb) {
+		background-color: var(--dplus-bgc-popout);
+		border-radius: var(--dplus-radius-ui);
+	}
+	
+	.popouts-2bnG9Z {
+		z-index: 1000 !important;
+	}
+		/* Tooltips */
+	.tooltip-14MtrL {
+		backdrop-filter: var(--blurcalc-popout);
+	}
+	.tooltipContent-Nejnvh {
+		padding: var(--dplus-spacing-ui);
+		background-color: transparent !important;
+	}
+		/*-- 8.2 Pins Popout --*/
+	.messagesPopoutWrap_b3b384 {
+		width: calc(440px + var(--dplus-icon-avatar-chat) + var(--dplus-spacing-ui));
+	}
+	.header_f5cc88 { padding: var(--dplus-spacing-ui); }
+	.messagesPopoutWrap_b3b384 {
+		background-color: transparent !important;
+		border: none !important;
+		max-height: 560px !important;
+		backdrop-filter: var(--blurcalc-popout);
+	}
+	.messageGroupWrapper_f8c6e9 {
+		border-radius: var(--dplus-radius-ui);
+		min-height: 70px;
+		background: transparent;
+	}
+	.messageGroupWrapper_f8c6e9 .cozy_f5c119.wrapper__09ecc {
+		padding-top: var(--dplus-spacing-ui);
+		padding-bottom: var(--dplus-spacing-ui);
+	}
+		
+	.messagesPopout__22763 .messageGroupWrapper_f8c6e9 .wrapper__09ecc {
+		background-color: var(--dplus-bgc-ui-card) !important;
+	}
+	.messagesPopout__22763 .messageGroupWrapper_f8c6e9:hover .wrapper__09ecc {
+		background-color: var(--dplus-bgc-ui-card-hover) !important;
+	}
+	.messagesPopoutWrap_b3b384 .messagesPopout__22763 .wrapper__09ecc {
+		transition: background-color var(--dplus-anim-short);
+	}
+	#app-mount .message__04d9f {
+		background-color: var(--dplus-bgc-chatmsg);
+		border-radius: var(--dplus-radius-ui);
+		border: 1px solid var(--dplus-accent-ui);
+		box-shadow: none;
+		padding: 0;
+		min-height: 70px;
+	}
+		
+		/*-- 8.3 Context Menu Popout --*/
+	.scroller-1bVxF5, .submenuPaddingContainer-_k62dJ {
+		padding: 0;
+	}
+	.scroller-1bVxF5::-webkit-scrollbar, .submenuPaddingContainer-_k62dJ::-webkit-scrollbar {
+		width: 0 !important;
+	}
+	.submenuPaddingContainer-_k62dJ {margin-right: -4px;margin-left: -4px;} /* fixes the submenu being four pixels off */
+	
+	.labelContainer-2vJzYL {
+		padding: calc(var(--dplus-spacing-ui) / 1.25) var(--dplus-spacing-ui);
+	}
+	
+	.item-1OdjEX:not([aria-haspopup="true"]):not(#account-avatar),
+	.item-1OdjEX[aria-haspopup="true"],
+	.wrapper__2e846,
+	.separator-1So4YB { backdrop-filter: var(--blurcalc-popout) }
+	/* the context menu backdrop blur has to be applied separately for elements
+	that have popups, or else the menu breaks when you hover over them */
+	
+	.wrapper__2e846 { padding: 0; }
+	.customItem-2CxBSo .button_afdfd9 { padding: calc(var(--dplus-spacing-ui) / 2); }
+	.separator-1So4YB { margin: 0; }
+	
+	.item-1OdjEX,
+	.button_afdfd9 {
+		border-radius: var(--dplus-radius-ui);
+	}
+	.item-1OdjEX {
+		margin: 0;
+		transition: background-color var(--dplus-anim-button);
+	}
+	
+	.button_afdfd9:not(.lookBlank__7ca0a), /* non-special buttons */
+	.colorDefault-CDqZdO:not(.labelContainer-2vJzYL) /* regular buttons, except context menu */ {
+		background-color: var(--dplus-bgc-button);
+		transition: var(--dplus-anim-button);
+	}
+	
+	[id^="status-picker-"] /* status picker (who would've guessed?) */ {
+		background-color: transparent !important;
+	}
+	
+	.button_afdfd9:not(.lookBlank__7ca0a):hover, /* buttons hovered over */
+	.button_afdfd9.focused__47631, /* focused but not hovered over */
+	.colorDefault-CDqZdO:not(.labelContainer-2vJzYL).focused-3qFvc8, /* regular buttons, focused */
+	.colorDefault-CDqZdO:hover:not(.labelContainer-2vJzYL):not(.hideInteraction-2jPGL_) /* regular buttons but only if clickable */ {
+		background-color: var(--dplus-bgc-button-hover)!important;
+		transition: var(--dplus-anim-button);
+	}
+	.item-1OdjEX.colorDanger-3n-KnP:hover {background-color: #f04747;}
+		/*-- 8.4 Inbox --*/
+	.container__20de0 {background-color: transparent;}
+		/*-- 8.5 AutoComplete --*/
+	.autocomplete_df266d {
+		background-color: var(--dplus-bgc-popout) !important;
+		border-radius: var(--dplus-radius-ui);
+	}
+	#app-mount .selected-3H3-RC {background-color: var(--dplus-accent-ui);}
+		/*-- 8.6 Stickers/Emoji/Gif Tab --*/
+	.result-3OpoO7, .wrapper__7a35f {
+		background-color: transparent !important;
+		border-radius: var(--dplus-radius-ui);
+	}
+	#app-mount .focused-q9B2e4:after, .theme-dark .result-3OpoO7:hover:after {
+		box-shadow: inset 0 0 0 2px var(--dplus-accent-ui), inset 0 0 0 3px #2f3136;
+	}
+	.scroller_e89578::-webkit-scrollbar {
+		width: calc(var(--dplus-scrollbar-width) / 2) !important;
+	}
+		/*-- 8.7 Profile Popout --*/
+	.headerNormal-1mX3KY,
+	.body-2wLx-E,
+	.bodyInnerWrapper-2bQs1k {
+		background-color: transparent;
+	}
+	.headerTop-2cWpdB {
+		background-color: var(--dplus-bgc-ui-card);
+	}
+	.translate-PeW1wK,
+	.popout-2iWAc- {
+		backdrop-filter: var(--blurcalc-popout);
+	}
+	.userPopout-2j1gM4 {
+		background-color: var(--dplus-bgc-popout);
+		border-radius: var(--dplus-radius-ui);
+		box-shadow: none !important;
+	}
+	.avatarPositionNormal__1797c {
+		left: var(--dplus-spacing-ui);
+	}
+	.bannerSVGWrapper__3e7b0 mask {
+		display: none;
+	}
+	.avatar-3QF_VA {
+		width: calc(var(--dplus-icon-avatar-profile) * 1.5) !important;
+		height: calc(var(--dplus-icon-avatar-profile) * 1.5) !important;
+	}
+	
+	.avatarWrapper_f77579 {
+		border-radius: var(--dplus-radius-avatar);
+		border-width: 8px;
+		border-style: solid;
+		border-color: transparent;
+		background-color: transparent;
+	}
+	
+	.avatarWrapper_f77579:before, .avatar-3QF_VA:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		right: -8px;
+		top: -8px;
+		border-width: 8px;
+		border-style: solid;
+		border-color: transparent;
+		background-color: var(--dplus-bgc-popout);
+		border-radius: calc(var(--dplus-radius-avatar) + 5px);
+		clip: rect(auto,auto,68px,auto);
+	}
+	
+	/* WIP: A nice background behind status icons, similar to vanilla Discord, but this one respects your background color and roundness preferences. Currently commented out because I can't get the status icon in front of the background.
+	
+	.wrapper-1VLyxH svg foreignObject:after {
+		content: "";
+		position: absolute;
+		width: 4px;
+		height: 4px;
+		right: 0px;
+		bottom: 0px;
+		border-width: 8px;
+		border-style: solid;
+		border-color: transparent;
+		background-color: var(--dplus-bgc-popout);
+		border-radius: calc(var(--dplus-radius-avatar) * 2) 0 50% 0;
+		backdrop-filter: var(--blurcalc-popout);
+		z-index: 1;
+	}
+	
+	.avatarWrapper_f77579 svg foreignObject rect {
+		z-index: 2;
+	}
+	*/
+	
+	/* this link doesn't do much other than take up space */
+	.setIdentityLink-hOFsMl {
+		display: none;
+	}
+	
+	.customStatus-3XAoF9 {
+		padding-top: var(--dplus-spacing-ui)
+	}
+	
+	.avatarWrapper_f77579:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		background-color: var(--dplus-bgc-ui-card);
+		backdrop-filter: var(--blurcalc-ui);
+		border-radius: var(--dplus-radius-avatar);
+		clip: rect(auto,auto,44px,auto);
+	}
+	
+	.avatar-2Vndt_ {
+		border-width: 6px;
+		border-style: solid;
+		border-color: transparent;
+		border-radius: var(--dplus-radius-ui);
+		background-color: transparent;
+	}
+	
+	.userPopout-2j1gM4 .wrapper-1VLyxH:not(.baseAvatar__339f8),
+	.container_b03b4b .wrapper-1VLyxH,
+	.avatarUploaderInner__6451c,
+	.avatarHint__8e5b9 {
+		width: var(--dplus-icon-avatar-profile) !important;
+		height: var(--dplus-icon-avatar-profile) !important;
+	}
+	
+	.assetsLargeImage_b88a59 {
+		border-radius: var(--dplus-radius-ui);
+	}
+		/* Roles */
+	.role__631a3 {
+		border-radius: var(--dplus-radius-ui);
+		position: relative;
+		overflow: hidden;
+	}
+	
+	
 /* Switches, Checkboxes, Buttons */
 button, [type="button"] {
 border-radius: var(--dplus-radius-ui) !important;
