@@ -104,23 +104,6 @@
 	--dplus-background-color-lightness-amount: 1;
 	--dplus-background-color-alpha: 0.8;
 }
-.theme-light {
-	--dplus-backdrop: url(https://i.imgur.com/3AiL3yN.png);
-	
-	--dplus-accent-color-hue: 320;
-	--dplus-accent-color-saturation: 60%;
-	--dplus-accent-color-lightness: 31%;
-	
-	--dplus-foreground-color-hue-base: 210;
-	--dplus-foreground-color-hue-links: 197;
-	--dplus-foreground-color-saturation-amount: 1;
-	--dplus-foreground-color-lightness-amount: 1;
-	
-	--dplus-background-color-hue: 320;
-	--dplus-background-color-saturation-amount: 1;
-	--dplus-background-color-lightness-amount: 1;
-	--dplus-background-color-alpha: 0.8;
-}
 
 .theme-dark {
 	--dplus-background-color-lightness-025: 2.5%;
@@ -131,14 +114,6 @@
 	--dplus-background-color-lightness-200: 20.0%;
 }
 
-.theme-light {
-	--dplus-background-color-lightness-025: 97.5%;
-	--dplus-background-color-lightness-050: 95.0%;
-	--dplus-background-color-lightness-075: 92.5%;
-	--dplus-background-color-lightness-100: 90.0%;
-	--dplus-background-color-lightness-150: 85.0%;
-	--dplus-background-color-lightness-200: 80.0%;
-}
 .theme-dark, .theme-light {
 	--dplus-accent-ui: hsl(
 	var(--dplus-accent-color-hue),
@@ -318,97 +293,6 @@
 	);	
 }
 
-.theme-light {
-	/* The variable hell continues */
-	--header-primary: hsl(
-	calc(var(--dplus-foreground-color-hue) + 30),
-	calc(var(--dplus-foreground-color-saturation-factor) * 7.7%),
-	calc(var(--dplus-foreground-color-lightness-amount) * 2.5%)
-	);
-    --header-secondary: hsl(
-	calc(var(--dplus-foreground-color-hue-base) + 5),
-	calc(var(--dplus-foreground-color-saturation-factor) * 9.7%),
-	calc(var(--dplus-foreground-color-lightness-amount) * 34.3%)
-	);
-	
-    --text-normal: hsl(
-	var(--dplus-foreground-color-hue-base),
-	calc(var(--dplus-foreground-color-saturation-factor) * 9.8%),
-	calc(var(--dplus-foreground-color-lightness-amount) * 20%)
-	);
-    --text-muted: hsl(
-	calc(var(--dplus-foreground-color-hue-base) + 3),
-	calc(var(--dplus-foreground-color-saturation-factor) * 9.6%),
-	calc(var(--dplus-foreground-color-lightness-amount) * 40.8%)
-	);
-	
-    --text-link: hsl(
-	calc(var(--dplus-foreground-color-hue-links) + 15),
-	calc(var(--dplus-foreground-color-saturation-factor) * 100%),
-	calc(var(--dplus-foreground-color-lightness-amount) * 43.9%)
-	);
-    --text-link-low-saturation: hsl(
-	calc(var(--dplus-foreground-color-hue-links) + 15),
-	calc(var(--dplus-foreground-color-saturation-factor) * 100%),
-	calc(var(--dplus-foreground-color-lightness-amount) * 43.9%)
-	);
-
-    --text-positive: hsl(
-	139,
-	calc(var(--dplus-foreground-color-saturation-factor) * 47.1%),
-	calc(var(--dplus-foreground-color-lightness-amount) * 33.3%)
-	);
-    --text-warning: hsl(
-	38,
-	calc(var(--dplus-foreground-color-saturation-factor) * 81.5%),
-	calc(var(--dplus-foreground-color-lightness-amount) * 31.8%)
-	);
-    --text-danger: hsl(
-	359,
-	calc(var(--dplus-foreground-color-saturation-factor) * 85.6%),
-	calc(var(--dplus-foreground-color-lightness-amount) * 64.7%)
-	);
-	
-    --text-brand: hsl(
-	var(--dplus-accent-color-hue),
-	calc(var(--dplus-foreground-color-saturation-factor) * 85.6%),
-	calc(var(--dplus-foreground-color-lightness-amount) * 64.7%)
-	);
-	
-    --interactive-normal: hsl(
-	calc(var(--dplus-foreground-color-hue-base) + 5),
-	calc(var(--dplus-foreground-color-saturation-factor) * 9.7%),
-	calc(var(--dplus-foreground-color-lightness-amount) / 1.5 * 34.3%)
-	);
-    --interactive-hover: hsl(
-	var(--dplus-foreground-color-hue-base),
-	calc(var(--dplus-foreground-color-saturation-factor) * 9.8%),
-	calc(var(--dplus-foreground-color-lightness-amount) / 1.5 * 20%)
-	);
-    --interactive-active: hsl(
-	calc(var(--dplus-foreground-color-hue-base) + 30),
-	calc(var(--dplus-foreground-color-saturation-factor) * 7.7%),
-	calc(var(--dplus-foreground-color-lightness-amount) / 1.5 * 2.5%)
-	);
-    --interactive-muted: hsl(
-	var(--dplus-foreground-color-hue-base),
-	calc(var(--dplus-foreground-color-saturation-factor) * 9.8%),
-	calc(var(--dplus-foreground-color-lightness-amount) / 1.5 * 80%)
-	);
-	
-	--channels-default: hsl(
-	calc(var(--dplus-foreground-color-hue-base) + 3),
-	calc(var(--dplus-foreground-color-saturation-factor) * 9.6%),
-	calc(var(--dplus-foreground-color-lightness-amount) / 1.5 * 40.8%)
-	);
-
-	--channel-icon: hsl(
-	calc(var(--dplus-foreground-color-hue-base) + 3),
-	calc(var(--dplus-foreground-color-saturation-factor) * 9.4%),
-	calc(var(--dplus-foreground-color-lightness-amount) / 1.5 * 45.9%)
-	);
-}
-
 /* Blur */
 :root {
 	--dplus-blur-ui: 2px;
@@ -466,10 +350,6 @@
 	--background-accent: var(--dplus-accent-ui);
 }
 
-.theme-light {
-	--bd-blue: var(--dplus-accent-ui) !important;
-	--background-accent: var(--dplus-accent-ui);
-}
       /*--- 4 Fonts ---*/
 
         /*-- 4.1 Display Font --*/
